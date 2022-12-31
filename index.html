@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eco-Ext</title>
+        <!-- Add a link to the Roboto font -->
+        <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+        <a href="https://www.paypal.com/donate/?business=QKSU223BQJPCQ&no_recurring=0&item_name=70%25+of+donations+go+to+environmental+protection+organizations+like+TeamTrees%2C+Greenpeace%2C+and+more%21&currency_code=USD" id="donate-button" target="_blank">Donate</a>
+        <style>
+          /* Use the Roboto font for the body */
+          body {
+            background: linear-gradient(to right, #59b65f, #6dc5dc);
+            font-family: 'Patua One', sans-serif;
+            text-align: left;
+            min-width: 400px;
+          }
+          /* Use a modern color for the h1 element */
+          h1 {
+            color: #ffffff;
+            text-align: center;
+          }
+          /* Use a modern font size and line height for the p element */
+          p {
+            color: white;
+            font-size: 18px;
+            line-height: 1.5;
+            text-indent: 0;
+            text-align: left;
+          }
+          button {
+            /* Set the background color to white */
+            background-color: white;
+            /* Set the text color to green */
+            color: green;
+            /* Round the edges of the button */
+            border-radius: 25px;
+            border: 2px solid #ccc;
+            /* Add some padding */
+            padding: 15px 32px;
+            /* Align the text to the center */
+            text-align: center;
+            /* Remove the text decoration */
+            text-decoration: none;
+            /* Set the display type to inline-block */
+            display: inline-block;
+            /* Set the font size */
+            font-size: 21px;
+            font-family: 'Patua One', sans-serif;
+            /* Add some margin */
+            margin: 4px 2px;
+            /* Set the cursor to a pointer */
+            cursor: pointer;
+            }
+            input[type=text] {
+                /* Round the edges of the input box */
+                border-radius: 25px;
+                /* Add some padding */
+                padding: 12px 20px;
+                /* Set the width of the input box */
+                width: 20%;
+                /* Set the background color */
+                background-color: #f8f8f8;
+                /* Set the border color */
+                border: 2px solid #ccc;
+                /* Set the font size */
+                font-size: 16px;
+                font-family: 'Patua One', sans-serif;
+                text-align: center;
+            }
+            form {
+                /* Center the form */
+                margin: 0 auto;
+                /* Style the form elements */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* Align the button to the right */
+                justify-content: flex-end;
+                /* Other styles... */
+            }
+            /* Style the donate button */
+            #donate-button {
+                /* Add button styles */
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: green;
+                color: white;
+                text-decoration: none;
+                border-radius: 4px;
+                /* Add hover effects */
+                transition: background-color 0.2s;
+            }
+            #loading-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 10px;
+                height: 3px;
+            }
+        </style>
+      </head>
+<body>
+    <div>
+        <h1 id="company">
+        <form id="company-form">
+            <label for="company-input">Is 
+                <input type="text" id="company-input" name="company" />
+            Eco-Friendly?</label><br>
+            
+            <button type="submit">Ask Eco-Bot!</button>
+        </form>
+        </h1>
+        
+        <ul>
+            <div id="loading-icon">
+                <img src="icons/loading.gif" alt="Loading icon">
+            </div>
+            <p id="response"></p>
+        </ul>
+    </div>
+  
+</body>
+<script src="script.js"></script>
+</html>
